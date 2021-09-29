@@ -28,9 +28,9 @@ function SignupPage(props) {
     axios.post(`${API_URL}/auth/signup`, requestBody)
       .then((response) => props.history.push("/login"))
       .catch((error) => {
-        //const errorDescription = error.response.data.message;
-        //setErrorMessage(errorDescription);
-        console.log(error)
+        const errorDescription = error.response.data.message;
+        setErrorMessage(errorDescription);
+        
       })
   };
 
