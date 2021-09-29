@@ -1,35 +1,46 @@
-import { Link } from "react-router-dom";
-import { useContext } from "react";                       // <== IMPORT 
-import { AuthContext } from "../context/auth.context";  // <== IMPORT
+import React from "react";
+import *as ReactNavbar from "react-responsive-animate-navbar";
+import "./scss/NavBar.scss"
 
-function Navbar() {
-  // Subscribe to the AuthContext to gain access to
-  // the values from AuthContext.Provider `value` prop
-  const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
 
-  return (
-    <nav>
-      <Link to="/">
-        <button>Home</button>
-      </Link>
--
-      {isLoggedIn
-        ? (<>
-            <Link to="/projects">
-              <button>Projects</button>
-            </Link>
-            <button onClick={logOutUser}>Logout</button>
-            <span>{user.name}</span>
-          </>)
-        : 
-        (<>
-          <Link to="/signup"> <button>Signup</button> </Link>
-          <Link to="/login"> <button>Login</button> </Link>
-        </>)
-      }
-    </nav>
-  );
-}
 
-export default Navbar;
+export default function Navbar({setSianedIn}) {
+
+    return (
+      <ReactNavbar.ReactNavbar
+        color="rgb(25, 25, 25)"
+       
+        menu={[
+          { name: "HOME", to: "/" },
+          { name: "Simple colors", to: "/paleteSimpleColors" },
+          { name: "Combinations", to: "/paleteCombi"},
+          { name: "Ranking", to: "/Ranking" },
+        ]}
+        social={[
+          {
+            name: "Linkedin",
+            url: "https://www.linkedin.com/in/nazeh-taha/",
+            icon: ["fab", "linkedin-in"],
+          },
+          {
+            name: "Facebook",
+            url: "https://www.facebook.com/nazeh200/",
+            icon: ["fab", "facebook-f"],
+          },
+          {
+            name: "Instagram",
+            url: "https://www.instagram.com/nazeh_taha/",
+            icon: ["fab", "instagram"],
+          },
+          {
+            name: "Twitter",
+            url: "http://nazehtaha.herokuapp.com/",
+            icon: ["fab", "twitter"],
+          },
+        ]}
+      />
+    );
+  }
+
+
 
