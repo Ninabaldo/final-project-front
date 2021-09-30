@@ -16,10 +16,10 @@ function Navbar() {
   return (
     <header class="site-header">
   <div class="wrapper site-header__wrapper">
-    <a href="#" class="brand">Colored ID</a>
+    <a href="/" class="brand">Colored ID</a>
     <nav class="nav">
       <button class="nav__toggle" aria-expanded="false" type="button">
-        menu
+       
       </button>
       <ul class="nav__wrapper">
         <li class="nav__item"><a href="/PaleteSimpleColors">Palete Colors</a></li>

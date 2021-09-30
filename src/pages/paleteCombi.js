@@ -1,7 +1,7 @@
 import randomColor from "randomcolor";
 import Api from "../services/ApiHandler.backend ";
 import { useEffect, useState } from "react";
-//import "../components/scss/PaleteCombination.scss"
+import "../components/scss/PaleteCombination.scss"
 
 function PaleteCombi(){
 
@@ -11,7 +11,7 @@ function PaleteCombi(){
 
         const ColorAPI= new Api()
         
-            let colors = randomColor({count:5})
+            let colors = randomColor({count:10})
            colors = colors.map ((color)=>{
             return color.substring (1)      })
             
@@ -22,7 +22,7 @@ function PaleteCombi(){
             .then((result) => { console.log(result)
                 colorArray?.push({image:result.data.image.bare, hex:result.data.seed.hex.clean})
                 
-                if(colorArray.length === 5 ){
+                if(colorArray.length === 10 ){
                  //res.send(result)
                  setschemeArray(colorArray)
                  
