@@ -44,8 +44,8 @@ return(
    console.log(elm)
 return (
 <div>
-<img src={elm.image} alt="roto"  className="colors"/>
-{elm.hex}
+<img src={elm.image}  className="colors"/>
+
     </div>
     
     

@@ -42,10 +42,12 @@ return(
 {schemeArray.map(elm =>{
    {const color = `#${elm.hex}`
 return (
-  <div class="contenedor">
-<div style={{backgroundColor:color,}}  class="colors">
-{elm.hex}
+  <div class="contenedor"> 
+<div style={{backgroundColor:color,}}  class="colors" 
+ alt="texto">{elm.hex} 
+   
     </div>
+    
     </div>
 )}
 
