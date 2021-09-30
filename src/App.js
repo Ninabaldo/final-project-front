@@ -8,7 +8,7 @@ import Ranking from "./pages/Ranking"
 
 import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
-import PrivateRoute from "./components/PrivateRoute";    // <== IMPORT
+//import PrivateRoute from "./components/PrivateRoute";    // <== IMPORT
 import AnonRoute from "./components/AnonRoute";        // <== IMPORT
 
 

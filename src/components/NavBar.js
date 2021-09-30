@@ -1,9 +1,4 @@
-import PaleteSimpleColors from "../pages/PaleteSimpleColors"
-import Paletecombi from "../pages/PaleteCombi"
-import login from "../pages/LoginPage"
-import signup from "../pages/SignupPage"
-import { useContext } from "react";   
-import ranking from "../pages/Ranking"                     
+                     
 //import { AuthContext } from "../context/auth.context"; 
 
 import "./scss/NavBar.scss";
@@ -23,7 +18,7 @@ function Navbar() {
       </button>
       <ul class="nav__wrapper">
         <li class="nav__item"><a href="/PaleteSimpleColors">Palete Colors</a></li>
-        <li class="nav__item"><a href="/paleteCombi">Palete Gradients</a></li>
+        <li class="nav__item"><a href="/PaleteCombi">Palete Gradients</a></li>
         <li class="nav__item"><a href="/login">Login</a></li>
         <li class="nav__item"><a href="/signup">Signup</a></li>
         <li class="nav__item"><a href="ranking">Ranking</a></li>

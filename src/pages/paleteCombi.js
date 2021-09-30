@@ -3,6 +3,11 @@ import Api from "../services/ApiHandler.backend ";
 import { useEffect, useState } from "react";
 import "../components/scss/PaleteCombination.scss"
 
+
+
+
+
+
 function PaleteCombi(){
 
   const[schemeArray, setschemeArray]= useState([])
@@ -41,14 +46,15 @@ return(
 
 {schemeArray?.map(elm =>{
    const color = `#${elm.hex}`
-   console.log(elm)
+   
 return (
 <div>
-<img src={elm.image}  className="colors"/>
+<img src={elm.image} alt="text" className="colors"/>
 
     </div>
     
     
+   
 )
 
 })}

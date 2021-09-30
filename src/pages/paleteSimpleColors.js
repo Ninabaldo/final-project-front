@@ -36,25 +36,28 @@ function PaleteSimpleColors(){
         
 
     }, [])
-return(
-<>
 
-{schemeArray.map(elm =>{
-   {const color = `#${elm.hex}`
-return (
-  <div class="contenedor"> 
-<div style={{backgroundColor:color,}}  class="colors" 
- alt="texto">{elm.hex} 
-   
-    </div>
+  return(
+    <>
     
-    </div>
-)}
+    {schemeArray?.map(elm =>{
+       const color = `#${elm.hex}`
+       
+    return (
+    <div>
+    <p>{elm.hex} </p>
+    <img src={elm.image} alt="text" className="colors" />
 
-})}
-
-</>
-)
-}
+    
+      </div>  
+        
+       
+    )
+    
+    })}
+    
+    </>
+    )
+    }
 
 export default PaleteSimpleColors;
