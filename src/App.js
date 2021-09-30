@@ -2,8 +2,8 @@ import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Navbar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
-import paleteSimpleColors from "./pages/paleteSimpleColors"
-import paleteCombi from "./pages/paleteCombi"
+import paleteSimpleColors from "./pages/PaleteSimpleColors"
+import paleteCombi from "./pages/PaleteCombi"
 import Ranking from "./pages/Ranking"
 
 import SignupPage from "./pages/SignupPage";
@@ -14,21 +14,22 @@ import AnonRoute from "./components/AnonRoute";        // <== IMPORT
 
 function App() {
   return (
-    <div className="App">
+   
+   <>
       <Navbar />
 
       <Switch>      
         <Route exact path="/" component={HomePage} />
         
         {/* 👇 UPDATE THE EXISTING ROUTES 👇  */}
-        <PrivateRoute exact path="/paleteSimpleColors" component={paleteSimpleColors} />
-        <PrivateRoute exact path="/paleteCombi" component={paleteCombi} />
-        <PrivateRoute exact path="/ranking" component={Ranking} />
+        <Route exact path="/paleteSimpleColors" component={paleteSimpleColors} />
+        <Route exact path="/paleteCombi" component={paleteCombi} />
+        <Route exact path="/ranking" component={Ranking} />
         
         <AnonRoute exact path="/signup" component={SignupPage} />
         <AnonRoute exact path="/login" component={LoginPage} />
       </Switch>
-    </div>
+    </>
   );
 }
 

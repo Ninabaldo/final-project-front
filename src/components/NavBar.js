@@ -1,46 +1,33 @@
-import React from "react";
-import *as ReactNavbar from "react-responsive-animate-navbar";
-import "./scss/NavBar.scss"
+import PaleteSimpleColors from "../pages/PaleteSimpleColors"
+import { useContext } from "react";                        
+//import { AuthContext } from "../context/auth.context"; 
 
+import "./scss/NavBar.scss";
 
+function Navbar() {
+  // Subscribe to the AuthContext to gain access to
+  // the values from AuthContext.Provider `value` prop
+  //const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
 
-export default function Navbar({setSianedIn}) {
+  return (
+    <header class="site-header">
+  <div class="wrapper site-header__wrapper">
+    <a href="#" class="brand">Colored ID</a>
+    <nav class="nav">
+      <button class="nav__toggle" aria-expanded="false" type="button">
+        menu
+      </button>
+      <ul class="nav__wrapper">
+        <li class="nav__item"><a href="/PaleteSimpleColors">Palete Colors</a></li>
+        <li class="nav__item"><a href="/paleteCombi">Palete Gradients</a></li>
+        <li class="nav__item"><a href="#">Services</a></li>
+        <li class="nav__item"><a href="#">Hire us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  );
+}
 
-    return (
-      <ReactNavbar.ReactNavbar
-        color="rgb(25, 25, 25)"
-       
-        menu={[
-          { name: "HOME", to: "/" },
-          { name: "Simple colors", to: "/paleteSimpleColors" },
-          { name: "Combinations", to: "/paleteCombi"},
-          { name: "Ranking", to: "/Ranking" },
-        ]}
-        social={[
-          {
-            name: "Linkedin",
-            url: "https://www.linkedin.com/in/nazeh-taha/",
-            icon: ["fab", "linkedin-in"],
-          },
-          {
-            name: "Facebook",
-            url: "https://www.facebook.com/nazeh200/",
-            icon: ["fab", "facebook-f"],
-          },
-          {
-            name: "Instagram",
-            url: "https://www.instagram.com/nazeh_taha/",
-            icon: ["fab", "instagram"],
-          },
-          {
-            name: "Twitter",
-            url: "http://nazehtaha.herokuapp.com/",
-            icon: ["fab", "twitter"],
-          },
-        ]}
-      />
-    );
-  }
-
-
+export default Navbar;
 
