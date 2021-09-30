@@ -39,16 +39,17 @@ function PaleteCombi(){
 return(
 <>
 
-{schemeArray.map(elm =>{
-   {const color = `#${elm.hex}`
+{schemeArray?.map(elm =>{
+   const color = `#${elm.hex}`
+   console.log(elm)
 return (
-
-<div style={{backgroundColor:color,}}  class="colors">
+<div>
+<img src={elm.image} alt="roto"  className="colors"/>
 {elm.hex}
     </div>
     
     
-)}
+)
 
 })}
 
