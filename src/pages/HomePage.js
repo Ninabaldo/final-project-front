@@ -6,11 +6,21 @@ function HomePage() {
     <>
 
 
-<main class="[ flow ] [ main ]">
-  <h2 class="main__heading">Welcomme to Colored ID</h2>
-  <p class="main__sub">The best library in the net. Check and save your favourite colors and combinations that we offer and put somme of them in your digital life.</p>
-  <button class="main__button">Explore</button>
-</main>
+    <div class="content">
+  <div class="content__container">
+    <p class="content__container__text">
+      Color
+    </p>
+    
+    <ul class="content__container__list">
+      <li class="content__container__list__item">your world!</li>
+      <li class="content__container__list__item">your mind!</li>
+      <li class="content__container__list__item">your days!</li>
+      <li class="content__container__list__item">ID :)!</li>
+    </ul>
+  </div>
+</div>
+
 </>
   );
 }

@@ -29,6 +29,7 @@ function PaleteSimpleColors(){
   api.addFavourite({...favourite,id:user?._id})
   
   .then((result) =>{
+    //res.redirect("/pages/Fav")
 
   })
   .catch(err => console.log(err));
