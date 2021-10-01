@@ -1,6 +1,6 @@
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
-import Navbar from "./components/NavBar";
+import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import paleteSimpleColors from "./pages/PaleteSimpleColors"
 import paleteCombi from "./pages/PaleteCombi"
@@ -16,7 +16,7 @@ function App() {
   return (
    
    <>
-      <Navbar />
+     <Navbar></Navbar> 
 
       <Switch>      
         <Route exact path="/" component={HomePage} />
