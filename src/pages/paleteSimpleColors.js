@@ -1,11 +1,40 @@
 import randomColor from "randomcolor";
 import Api from "../services/ApiHandler";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext} from "react";
 import "../components/scss/PaleteColors.scss"
+import ApiHandler from "../services/ApiHandler.backend "
+import { AuthContext } from "./../context/auth.context";
+import { returnStatement } from "@babel/types";
+
+//import { BlockPicker } from 'react-color'
+
+
+
+
+
+
+
+
 
 function PaleteSimpleColors(){
 
   const[schemeArray, setschemeArray]= useState([])
+  const { user } = useContext(AuthContext);
+  
+
+  function favoritos(favourite){
+  
+  const api = new ApiHandler() 
+  
+  api.addFavourite({...favourite,id:user?._id})
+  
+  .then((result) =>{
+
+  })
+  .catch(err => console.log(err));
+
+  }
+
 
     useEffect(() => {
 
@@ -29,13 +58,22 @@ function PaleteSimpleColors(){
                 } 
 
             })
+
+
+        
             .catch(err => console.log(err));
              
             })           
        
         
+ 
+
+
+
 
     }, [])
+
+    
 
   return(
     <div className= "simplecolors">
@@ -47,7 +85,8 @@ function PaleteSimpleColors(){
     <div>
     <img src={elm.image} alt="text" className="colors" />
     
-    <button type="submit" class="heart">♥︎</button>
+    <button onClick={()=>{favoritos(elm)}} 
+    class="heart"> ♥ </button>
      
      </div>
     )
@@ -58,4 +97,6 @@ function PaleteSimpleColors(){
     )
     }
 
+
+    
 export default PaleteSimpleColors;

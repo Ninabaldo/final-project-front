@@ -1,10 +1,25 @@
-import { SketchPicker } from 'react-color'
+import React from 'react';
+import { BlockPicker } from 'react-color'
  
-function colorPicker (){
- 
-  
-    return <SketchPicker />  //AlphaPicker BlockPicker ChromePicker CirclePicker CompactPicker GithubPicker HuePicker MaterialPicker PhotoshopPicker SketchPicker SliderPicker SwatchesPicker TwitterPicker
+class Component extends React.Component {
+  state = {
+    background: '#fff',
+  };
+  handleChange = (color,event) => {
+    this.setState({ background: color.hex });
+  };
+  render() {
+
+    return <BlockPicker
+        color={ this.state.background }
+        onChangeComplete={ this.handleChange}
+      />
+    
   }
+}
+    
+    //AlphaPicker BlockPicker ChromePicker CirclePicker CompactPicker GithubPicker HuePicker MaterialPicker PhotoshopPicker SketchPicker SliderPicker SwatchesPicker TwitterPicker
+  
 
 
 export default colorPicker;
