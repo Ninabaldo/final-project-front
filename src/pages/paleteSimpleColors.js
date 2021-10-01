@@ -11,7 +11,7 @@ function PaleteSimpleColors(){
 
         const ColorAPI= new Api()
         
-            let colors = randomColor({count:5})
+            let colors = randomColor({count:20})
            colors = colors.map ((color)=>{
             return color.substring (1)      })
             
@@ -22,7 +22,7 @@ function PaleteSimpleColors(){
             .then((result) => { //console.log(result.data.seed.hex.value)
                 colorArray?.push({image:result.data.image.bare, hex:result.data.seed.hex.clean})
                 
-                if(colorArray.length === 5 ){
+                if(colorArray.length === 20 ){
                  //res.send(result)
                  setschemeArray(colorArray)
                  
@@ -38,25 +38,23 @@ function PaleteSimpleColors(){
     }, [])
 
   return(
-    <>
+    <div className= "simplecolors">
     
     {schemeArray?.map(elm =>{
        const color = `#${elm.hex}`
        
     return (
     <div>
-    <p>{elm.hex} </p>
     <img src={elm.image} alt="text" className="colors" />
-
     
-      </div>  
-        
-       
+    <button type="submit" class="heart">♥︎</button>
+     
+     </div>
     )
     
     })}
     
-    </>
+    </div>
     )
     }
 

@@ -42,25 +42,25 @@ function PaleteCombi(){
 
     }, [])
 return(
-<>
 
-{schemeArray?.map(elm =>{
-   const color = `#${elm.hex}`
-   
-return (
-<div>
-<img src={elm.image} alt="text" className="colors"/>
-
+    <div className= "simplecolors">
+    
+    {schemeArray?.map(elm =>{
+       const color = `#${elm.hex}`
+       
+    return (
+    <div>
+    <img src={elm.image} alt="text" className="colors" />
+    
+    <button type="submit" class="heart">♥</button>
+     
+     </div>
+    )
+    
+    })}
+    
     </div>
-    
-    
-   
-)
-
-})}
-
-</>
-)
-}
+    )
+    }
 
 export default PaleteCombi;
