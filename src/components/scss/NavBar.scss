@@ -82,7 +82,8 @@ body {
 
     .nav__item {
       list-style-type: none;
-      padding-left: 2rem;
+      padding-left: 4rem;
+      font-size:5em;
     }
     
 
@@ -100,6 +101,14 @@ body {
   }
 }
 
+.titleLogo{
+  font-size: 4.1rem;
+
+display: flex;
+margin-right: 20px;
+color:turquoise
+}
+
 
 
 
@@ -107,12 +116,7 @@ body {
   
 
 
-.header__logo{
-font-size: 2.1rem;
-@extend.font-800;
-display: flex;
-margin-right: 20px;
-}
+
   
 
 

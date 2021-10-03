@@ -13,10 +13,11 @@ function Navbar() {
     return (
 <header class="header" role="banner" aria-label="The Top">
   <div class="header__wrapper">
-    <h1 class="header__logo">Colored ID</h1>
+   
     <nav class="[ nav ] [ flow ]" aria-role="navigation">
       <ul class="nav__list" role="list">
-        
+
+        <li class="titleLogo"><a href="/">COLORED ID</a></li>
         <li class="nav__item"><a href="/paleteSimpleColors">Palete Colors</a></li>
         <li class="nav__item"><a href="paleteCombi">Palete Combi</a></li>
         <li class="nav__item"><a href="/ranking">Ranking</a></li>
