@@ -85,7 +85,7 @@ function PaleteCombi(){
     <div>
     <img src={elm.image} alt="text" className="colors" />
     
-    <button onClick={()=>{favoritos(elm)}} class="heart">♥︎</button>
+    <button onClick={()=>{favoritos(elm)}} ></button>
      
      </div>
     )

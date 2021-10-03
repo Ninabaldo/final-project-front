@@ -5,7 +5,6 @@ function HomePage() {
   return (
     <>
 
-
     <div class="content">
   <div class="content__container">
     <p class="content__container__text">
@@ -15,11 +14,17 @@ function HomePage() {
     <ul class="content__container__list">
       <li class="content__container__list__item">your world!</li>
       <li class="content__container__list__item">your mind!</li>
-      <li class="content__container__list__item">your days!</li>
+      <li class="content__container__list__item">your project!</li>
       <li class="content__container__list__item">ID :)!</li>
     </ul>
   </div>
 </div>
+
+
+
+
+
+
 
 </>
   );
