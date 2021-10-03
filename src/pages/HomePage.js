@@ -4,7 +4,7 @@ import "../components/scss/Home.scss"
 function HomePage() {
   return (
     <>
-    <h2>Put somme colors in your<br></br>
+    <h2>Put somme colors<br></br> in your<br></br>
      digital world</h2>
 
     <div class="content">
