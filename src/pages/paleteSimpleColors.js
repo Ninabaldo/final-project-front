@@ -84,10 +84,12 @@ function PaleteSimpleColors(){
        
     return (
     <div>
-    <img src={elm.image} alt="text" className="colors" />
+    <img src={elm.image} alt="text" className="colors" 
+      
+    />
     
     <button onClick={()=>{favoritos(elm)}} 
-    class="heart"> ♥ </button>
+    class="heart">♥︎</button>
      
      </div>
     )

@@ -82,14 +82,16 @@ function PaleteCombi(){
        const color = `#${elm.hex}`
        
     return (
-    <div>
-    <img src={elm.image} alt="text" className="colors" />
+      <div>
+    <img src={elm.image} alt="text" className="colors" 
+      
+    />
     
-    <button onClick={()=>{favoritos(elm)}} ></button>
+    <button onClick={()=>{favoritos(elm)}} 
+    class="heart">♥︎</button>
      
      </div>
     )
-    
     })}
     
     </div>
