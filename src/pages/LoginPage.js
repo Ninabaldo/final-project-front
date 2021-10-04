@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { AuthContext } from "./../context/auth.context";
 import "../components/scss/login.scss"
+import loginImage from "../img/home..1jepg.jpg"
 
 
 const API_URL = process.env.REACT_APP_API_URL;
@@ -39,6 +40,8 @@ function LoginPage(props) {
   };
   
   return (
+
+    
     <div className="contentlogIn">
     <div className="LoginPage">
       <h3>Login</h3>
@@ -57,7 +60,10 @@ function LoginPage(props) {
       <p>Don't have an account yet?</p>
       <Link to={"/signup"}> Sign Up</Link>
     </div>
+    
     </div>
+   
+    
   )
 }
 

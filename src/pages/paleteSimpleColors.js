@@ -83,17 +83,19 @@ function PaleteSimpleColors(){
        const color = `#${elm.hex}`
        
     return (
-    <div>
-    <img src={elm.image} alt="text" className="colors" 
-      
-    />
+      <div>
+    <div className="colors"
+    style={{backgroundImage: `url(${elm.image})`}}>
+    <p>{elm.hex}</p>
     
-    <button onClick={()=>{favoritos(elm)}} 
-    class="heart">♥︎</button>
      
      </div>
-    )
     
+     <button onClick={()=>{favoritos(elm)}} 
+    class="heart">♥︎</button>
+  </div>
+    )
+   
     })}
     
     </div>

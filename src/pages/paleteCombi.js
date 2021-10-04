@@ -6,7 +6,7 @@ import ApiHandler from "../services/ApiHandler.backend "
 import { AuthContext } from "./../context/auth.context";
 import { returnStatement } from "@babel/types";
 
-//import { BlockPicker } from 'react-color'
+
 
 
 
@@ -76,8 +76,16 @@ function PaleteCombi(){
     
 
   return(
+
+   
+
+ <div className="picker">
+  <input type="color" defaultValue="#ED6371"/>
+  
+
+
     <div className= "simplecolors">
-    
+
     {schemeArray?.map(elm =>{
        const color = `#${elm.hex}`
        
@@ -95,7 +103,7 @@ function PaleteCombi(){
     })}
     
     </div>
-    )
+    </div>)
     }
 
 

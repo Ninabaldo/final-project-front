@@ -394,7 +394,7 @@ margin: -260px -260px 800px 800px;
 }
 
 button.homepage{
-  background-color: rgb(57, 160, 149);
+  background-color: rgb(18, 112, 103);
   width: 105px;
   height: 65px;
   color:white;
@@ -405,4 +405,8 @@ button.homepage{
   margin-top:100px;
   margin-left:250px;
   cursor:pointer;
+}
+
+button.homepage:hover{
+  background-color: rgb(238, 88, 42);
 }

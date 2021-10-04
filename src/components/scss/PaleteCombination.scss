@@ -15,3 +15,35 @@ body{
   
   }
 
+  element.style {
+  }
+  input[type="text"] {
+      text-transform: uppercase;
+  }
+  input {
+      height: 50px;
+      border: none;
+      outline: 0;
+  }
+  input {
+      font-size: 18px;
+      padding: 10px 10px 10px 5px;
+      -webkit-appearance: none;
+      display: block;
+      background: #fafafa;
+      color: #000000;
+      width: 100%;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #757575;
+  }
+
+  input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+  }
+  input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
