@@ -390,5 +390,19 @@ float:right;
 width: 774px;
 height: 900px;
 border-radius: 15px;
-margin: -260px -260px 1100px 1100px;
+margin: -260px -260px 800px 800px;
+}
+
+button.homepage{
+  background-color: rgb(57, 160, 149);
+  width: 105px;
+  height: 65px;
+  color:white;
+  border-radius: 20px;
+  border-color:transparent;
+  font-size:20px;
+  float:left;
+  margin-top:100px;
+  margin-left:250px;
+  cursor:pointer;
 }

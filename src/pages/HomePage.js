@@ -7,7 +7,10 @@ function HomePage() {
     <>
     <h2>Put somme colors<br></br>
      in your<br></br>
-     digital world</h2>
+     digital world</h2> 
+
+    <button type="submit"src="" className="homepage">Login</button>
+
      <img src={homeImage} className="styleimage"/>
           
     
