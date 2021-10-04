@@ -1,32 +1,4 @@
-:root {
-  --color-black: #2a2a2a;
-  --color-text: #a9a9a9;
-  --color-light: #fff;
-  --color-text-light: #444444;
-  --font-base-family: "Manrope", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
-    Cantarell, "Helvetica Neue", sans-serif;
-  --line-height: 1.2;
-}
 
-/**
- * utils
- */
-
-.font-800 {
-  font-weight: 800;
-}
-
-.font-600 {
-  font-weight: 600;
-}
-
-.font-400 {
-  font-weight: 400;
-}
-
-/**
- * BASE
- */
 
 *,
 *:before,
@@ -36,18 +8,7 @@
   padding: 0;
 }
 
-body {
 
-  font-family: var(--font-base-family, sans-serif);
-  background: var(--color-light);
-  color:white;
-  display:flex;
-  grid-template-columns: 3.4fr 3fr;
-  grid-template-rows: 0.5fr repeat(9, 1fr);
-  line-height: var(--line-height);
-  padding: 0 0 0 5rem;
-  
-}
 
 /**
  * FLOW UTILITY
@@ -62,13 +23,6 @@ body {
   margin-top: var(--flow-space);
 }
 
-/**
- * HEADER
- */
-.header {
-  // grid-area: 1 / 1 / 3 / 2;
- 
-  
 
 
   
@@ -82,36 +36,29 @@ body {
 
     .nav__item {
       list-style-type: none;
-      padding-left: 4rem;
-      font-size:5em;
+      padding-left: 7rem;
+      font-size:45px;
     }
     
 
-    a {
-      
-      @extend .font-600;
-      font-size: 0.825rem;
-      text-decoration: none;
-      color: white;
-      padding-bottom: 0.5em;
-
-      
-    }
     
   }
-}
+
 
 .titleLogo{
-  font-size: 4.1rem;
+  font-size: 5.1rem;
 
 display: flex;
 margin-right: 20px;
-color:turquoise
+
 }
 
 .titleLogo:hover{
-  background-color:rgb(221, 255, 215);
-  width: auto;
+  background-color:rgb(127, 182, 173);
+  width: 115px;
+  height: 24px;
+  
+  
 }
 
 
