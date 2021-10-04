@@ -77,6 +77,8 @@ function PaleteSimpleColors(){
     
 
   return(
+
+   
     <div className= "simplecolors">
     
     {schemeArray?.map(elm =>{
@@ -99,6 +101,7 @@ function PaleteSimpleColors(){
     })}
     
     </div>
+    
     )
     }
 

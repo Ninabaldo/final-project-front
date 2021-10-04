@@ -3,7 +3,7 @@ import "../components/scss/Ranking.scss"
 function Ranking(){
 
     return(
-  <h1>RANKING PAGE</h1>
+  <h1>POPULAR FAVOURITE COMBINATIONS</h1>
     )
 };
 

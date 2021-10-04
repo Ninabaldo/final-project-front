@@ -1,4 +1,5 @@
 import "./App.css";
+//import Footer from "./footer"
 import { Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
@@ -14,7 +15,7 @@ import AnonRoute from "./components/AnonRoute";        // <== IMPORT
 
 function App() {
   return (
-   
+   <div>
    <>
      <Navbar></Navbar> 
 
@@ -29,7 +30,15 @@ function App() {
         <AnonRoute exact path="/signup" component={SignupPage} />
         <AnonRoute exact path="/login" component={LoginPage} />
       </Switch>
+     
     </>
+
+ </div>
+
+
+
+
+
   );
 }
 

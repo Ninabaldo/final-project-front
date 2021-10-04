@@ -4,7 +4,7 @@ import ranking from "../pages/Ranking"
 import paleteColors from "../pages/PaleteSimpleColors"
 import paleteCombi from "../pages/PaleteCombi"
 import "./scss/NavBar.scss";
-import { NavbarBrand } from "react-bootstrap"
+
 function Navbar() {
     // Subscribe to the AuthContext to gain access to
     // the values from AuthContext.Provider `value` prop
@@ -26,6 +26,13 @@ function Navbar() {
       </ul>
     </nav>
   </div>
+
+  <div id="icon-menu" >
+  <i class="fas fa-bars"></i>
+
+  </div> 
+
+
 </header>
 
 );
