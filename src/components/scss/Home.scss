@@ -379,9 +379,16 @@ $colors: ($color-red, $color-blue, $color-green, $color-yellow,$color-orange,$co
 h2{
   font-size: 70px;
   display:flex;
-  margin-top: 200px;
-  margin-left:70px;
+  margin-top: 100px;
+  margin-left:250px;
   
 
 }
 
+.styleimage{
+float:right;
+width: 774px;
+height: 900px;
+border-radius: 15px;
+margin: -260px -260px 1100px 1100px;
+}
