@@ -4,11 +4,14 @@ import ranking from "../pages/Ranking"
 import paleteColors from "../pages/PaleteSimpleColors"
 import paleteCombi from "../pages/PaleteCombi"
 import "./scss/NavBar.scss";
+import { AuthContext } from "./../context/auth.context";
+import { useContext } from "react";
 
 function Navbar() {
     // Subscribe to the AuthContext to gain access to
     // the values from AuthContext.Provider `value` prop
-    //const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
+
+    const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
   
     return (
 <header class="header" role="banner" aria-label="The Top">
@@ -16,13 +19,24 @@ function Navbar() {
    
     <nav class="[ nav ] [ flow ]" aria-role="navigation">
       <ul class="nav__list" role="list">
-
+      
+     
+      
         <li class="titleLogo"><a href="/">COLORED ID</a></li>
         <li class="nav__item"><a href="/paleteSimpleColors">Palete Colors</a></li>
         <li class="nav__item"><a href="paleteCombi">Palete Combi</a></li>
         <li class="nav__item"><a href="/ranking">Ranking</a></li>
+
+        {isLoggedIn ?
+          <li class="nav__item"><a onClick={()=>{logOutUser()}}>Logout</a></li>
+        :
+          <>
         <li class="nav__item"><a href="signup">Signup</a></li>
         <li class="nav__item"><a href="/login">Login</a></li>
+          </>
+        
+        }
+        
       </ul>
     </nav>
   </div>

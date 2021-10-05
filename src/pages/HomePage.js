@@ -1,9 +1,12 @@
 import "../components/scss/Home.scss"
 import homeImage from "../img/home.jpeg"
 import Footer from "../components/Footer";
+import {useHistory} from "react-router-dom";
 
 
 function HomePage() {
+  const history = useHistory()
+  
   return (
     
     <>
@@ -11,7 +14,12 @@ function HomePage() {
      in your<br></br>
      digital world</h3> 
 
-    <button  src="/loginPage.js" className="homepage">Login</button>
+   <button onClick={()=>{
+     history.push("/login")
+   }}> 
+   Login
+
+   </button>
 
      <img src={homeImage} className="styleimage"/>
   

@@ -95,10 +95,10 @@ function PaleteCombi(){
     <img src={elm.image} alt="text" className="colors" 
       
     />
-    
+    {isLoggedIn?
     <button onClick={()=>{favoritos(elm)}} 
     class="heart">♥︎</button>
-     
+     :null}
      </div>
     )
     })}

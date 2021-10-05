@@ -6,7 +6,6 @@ import ApiHandler from "../services/ApiHandler.backend "
 import { AuthContext } from "./../context/auth.context";
 import { returnStatement } from "@babel/types";
 
-//import { BlockPicker } from 'react-color'
 
 
 
@@ -19,7 +18,8 @@ import { returnStatement } from "@babel/types";
 function PaleteSimpleColors(){
 
   const[schemeArray, setschemeArray]= useState([])
-  const { user } = useContext(AuthContext);
+  const { user, isLoggedIn } = useContext(AuthContext);
+  
   
 
   function favoritos(favourite){
@@ -92,9 +92,11 @@ function PaleteSimpleColors(){
     
      
      </div>
-    
+
+     {isLoggedIn ?
      <button onClick={()=>{favoritos(elm)}} 
     class="heart">♥︎</button>
+    :null}
   </div>
     )
    
