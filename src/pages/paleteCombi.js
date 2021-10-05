@@ -2,6 +2,7 @@ import randomColor from "randomcolor";
 import Api from "../services/ApiHandler";
 import { useEffect, useState, useContext} from "react";
 import "../components/scss/PaleteColors.scss"
+import "../components/scss/PaleteCombination.scss"
 import ApiHandler from "../services/ApiHandler.backend "
 import { AuthContext } from "./../context/auth.context";
 import { returnStatement } from "@babel/types";
@@ -78,18 +79,26 @@ function PaleteCombi(){
   return(
 
    
-
+<div className="pick">
  <div className="picker">
   <input type="color" defaultValue="#ED6371"/>
+  <input type="text" />
   
+  </div>
+
+
+  <div className= "simplecolors">
+    <div>
+    {!isLoggedIn ?
+    <h4>Register or login to save your favourites :)</h4>
+    :null}
+    <h4 className="name">Click to the Color Picker and check the value of each color "Hbr,Hsl,Hex" </h4>
+    </div>
   
-
-
-    <div className= "simplecolors">
-
+    
     {schemeArray?.map(elm =>{
        const color = `#${elm.hex}`
-       
+  
     return (
       <div>
     <img src={elm.image} alt="text" className="colors" 

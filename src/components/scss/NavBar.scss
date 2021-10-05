@@ -18,6 +18,14 @@
   
 }
 
+header .nav a {
+  letter-spacing: 1px;
+  font-size: 1.825rem;
+  text-decoration: none;
+  color: var(--color-black);
+  padding-bottom: 0.5em;
+  cursor: pointer;
+}
 #icon-menu:hover{
   background-color: #f2f2f2;
 }
@@ -34,3 +42,5 @@
     padding:0 20px;
   }
 }
+
+

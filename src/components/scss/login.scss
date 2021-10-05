@@ -75,7 +75,7 @@ body{
   
   input{
     width:100%;
-    padding:15px;
+    padding:17px;
     margin:5px;
     border-radius:1px;
     border:1px solid #ccc;
@@ -83,3 +83,8 @@ body{
   }
 }
 
+.button{
+  width: 50px;
+  height: 30px;
+  background-color: violet;
+}

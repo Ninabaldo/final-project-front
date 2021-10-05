@@ -80,7 +80,12 @@ function PaleteSimpleColors(){
 
    
     <div className= "simplecolors">
-    
+    <div>
+    {!isLoggedIn ?
+    <h4>Register or login to save your favourites :)</h4>
+    :null}
+    </div>
+
     {schemeArray?.map(elm =>{
        const color = `#${elm.hex}`
        
@@ -88,11 +93,7 @@ function PaleteSimpleColors(){
       <div>
     <div className="colors"
     style={{backgroundImage: `url(${elm.image})`}}>
-    <p>{elm.hex}</p>
-    
-     
-     </div>
-
+  <abbr title="select+crt+c" className="p">#{elm.hex}</abbr></div>
      {isLoggedIn ?
      <button onClick={()=>{favoritos(elm)}} 
     class="heart">♥︎</button>

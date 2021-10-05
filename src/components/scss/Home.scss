@@ -283,7 +283,7 @@ width: 687px;
 height: 800px;
 border-radius: 10px;
 
-margin: -370px -370px 1100px 1100px;
+margin: -440px -440px 900px 900px;
 
 }
 
@@ -308,5 +308,24 @@ button.homepage:hover{
 a:hover {
   background-color: rgb(134, 189, 182);
   
+}
+
+button.homepage1{
+  background-color:rgb(238, 88, 42) ;
+  
+  width: 105px;
+  height: 65px;
+  color:white;
+  border-radius: 20px;
+  border-color:transparent;
+  font-size:20px;
+  float:left;
+  margin-top:100px;
+  margin-left:15px;
+  cursor:pointer;
+}
+
+button.homepage1:hover{
+  background-color: rgb(18, 112, 103);
 }
 

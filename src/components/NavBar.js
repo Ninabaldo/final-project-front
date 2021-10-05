@@ -43,14 +43,14 @@ function Navbar() {
         
         }
         
+        
       </ul>
     </nav>
   </div>
 
-  <div id="icon-menu" >
-  <i class="fas fa-bars"></i>
 
-  </div> 
+  
+
 
 
 </header>

@@ -41,15 +41,15 @@ function LoginPage(props) {
   
   return (
     <form onSubmit={handleLoginSubmit}>
-    <div class="container" >
-    <div class="top"></div>
-    <div class="bottom"></div>
-    <div class="center">
+    <div className="container" >
+    <div className="top"></div>
+    <div className="bottom"></div>
+    <div className="center">
       <h2>Please Login</h2>
       <input type="email" value={email} onChange={handleEmail}placeholder="email"/>
       <input type="password"  value={password} onChange={handlePassword}placeholder="password"/>
       <h2>&nbsp;</h2>
-      <button type="submit" className="buttonlogin">Login</button>
+      <button type="submit" className="buttonlogin"> Login </button>
     </div>
    
     {errorMessage && <p className="error-message">{errorMessage}</p>}

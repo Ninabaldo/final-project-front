@@ -14,9 +14,12 @@ function HomePage() {
      in your<br></br>
      digital world</h3> 
 
-   <button onClick={()=>{history.push("/login")}}> 
+   <button  className="homepage"onClick={()=>{history.push("/login")}}> 
    Login
 
+   </button>
+   <button  className="homepage1"onClick={()=>{history.push("/signup")}}> 
+   Signup
    </button>
 
      <img src={homeImage} className="styleimage"/>

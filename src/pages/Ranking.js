@@ -4,8 +4,8 @@ function Ranking(){
 
     return(
       <div>
-  <h1>Most popular paletes<br></br>
-      of Colored Id</h1>
+  <h1>The most popular<br></br>
+      of Colored Id <br></br> 🫐 🍓 🍌 🥝 🍑 🍉 🥥</h1>
    
       </div>
   
