@@ -25,8 +25,8 @@ function Fav(favourite){
   }, []);
     
   return(
-
-   
+   <>
+   <h6>Hey, {user.name} :) <br></br>check out your favourites <br></br> 🌔 🌓 🌒 🌑 🌘 🌗 🌖 🌕</h6>
 
     <div className="picker">
      <input type="color" defaultValue="#ED6371"/>
@@ -36,9 +36,9 @@ function Fav(favourite){
    
        <div className= "simplecolors">
    
-       {favourites.map(elm =>{
+       {favourites?.map(elm =>{
           const color = `#${elm.hex}`
-          
+      
        return (
          <div>
        <img src={elm.image} alt="text" className="colors" 
@@ -53,7 +53,10 @@ function Fav(favourite){
        })}
        
        </div>
-       </div>)
+       </div>
+       </> 
+       )
+        
        }
    
    
