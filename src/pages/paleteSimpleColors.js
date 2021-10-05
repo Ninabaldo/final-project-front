@@ -84,6 +84,7 @@ function PaleteSimpleColors(){
     {!isLoggedIn ?
     <h4>Register or login to save your favourites :)</h4>
     :null}
+    <h4 className="lila">Reload ♻︎ the page to see more colors</h4>
     </div>
 
     {schemeArray?.map(elm =>{

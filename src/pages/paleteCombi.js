@@ -80,19 +80,19 @@ function PaleteCombi(){
 
    
 <div className="pick">
+<h5>ColorPicker</h5>
  <div className="picker">
   <input type="color" defaultValue="#ED6371"/>
-  <input type="text" />
-  
   </div>
 
 
   <div className= "simplecolors">
     <div>
     {!isLoggedIn ?
-    <h4>Register or login to save your favourites :)</h4>
+    <h4>REGISTER or LOGIN to save your favourites :)</h4>
     :null}
     <h4 className="name">Click to the Color Picker and check the value of each color "Hbr,Hsl,Hex" </h4>
+    <h4 className="lila">Reload ♻︎ the page to see more combinations</h4>
     </div>
   
     
