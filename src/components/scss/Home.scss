@@ -145,7 +145,7 @@ $color-yellow: #FBD301;
 $color-red: #FF3270;
 $color-blue: #208BF1;
 $color-green: #AFE102;
-$color-orange: #f15b20;
+$color-orange: #f26b35;
 $color-pink: #e102d6;
 
 $colors: ($color-red, $color-blue, $color-green, $color-yellow,$color-orange,$color-pink,$color-red, $color-blue,);
@@ -279,10 +279,7 @@ $colors: ($color-red, $color-blue, $color-green, $color-yellow,$color-orange,$co
     &:after, &:before {
       position: absolute;
       top: 0;
-      
-      color: rgb(246, 199, 154);
-      font-size: 42px;
-      line-height: 40px;
+   
       
       -webkit-animation-name: opacity;
       -webkit-animation-duration: 2s;
@@ -376,7 +373,7 @@ $colors: ($color-red, $color-blue, $color-green, $color-yellow,$color-orange,$co
   83.3%,95.96% {transform:translate3d(0,-25%,0);}
 }
 
-h2{
+h3{
   font-size: 70px;
   display:flex;
   margin-top: 100px;
@@ -387,11 +384,12 @@ h2{
 
 .styleimage{
 float:right;
-width: 487px;
+width: 587px;
 height: 700px;
+border-radius: 10px;
 
 margin: -240px -240px 710px 710px;
--webkit-box-reflect: right;
+
 }
 
 button.homepage{
@@ -411,3 +409,9 @@ button.homepage{
 button.homepage:hover{
   background-color: rgb(238, 88, 42);
 }
+
+a:hover {
+  background-color: rgb(134, 189, 182);
+  
+}
+

@@ -3,8 +3,14 @@ import "../components/scss/Ranking.scss"
 function Ranking(){
 
     return(
-  <h1>POPULAR FAVOURITE COMBINATIONS</h1>
-    )
+      <div>
+  <h1>Most popular paletes<br></br>
+      of Colored Id</h1>
+   
+      </div>
+  
+  
+  )
 };
 
 export default Ranking;

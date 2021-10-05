@@ -7,9 +7,9 @@ function HomePage() {
   return (
     
     <>
-    <h2>Put somme colors<br></br>
+    <h3>Put somme colors<br></br>
      in your<br></br>
-     digital world</h2> 
+     digital world</h3> 
 
     <button  src="/loginPage.js" className="homepage">Login</button>
 
