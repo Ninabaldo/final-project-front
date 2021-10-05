@@ -14,7 +14,8 @@ class ColorApi {
   }
    
   getGradientScheme =(color) => this.api.get(`/scheme/${color}`);
-  addFavourite =(favourite)=>this.api.post(`/add-favourite`,favourite)
+  addFavourite =(favourite)=>this.api.post(`/add-favourite`,favourite);
+  getFavourite=(userId)=>this.api.post(`/fav`,userId);
   
 
 }

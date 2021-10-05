@@ -14,9 +14,7 @@ function HomePage() {
      in your<br></br>
      digital world</h3> 
 
-   <button onClick={()=>{
-     history.push("/login")
-   }}> 
+   <button onClick={()=>{history.push("/login")}}> 
    Login
 
    </button>

@@ -19,7 +19,7 @@ import { returnStatement } from "@babel/types";
 function PaleteCombi(){
 
   const[schemeArray, setschemeArray]= useState([])
-  const { user } = useContext(AuthContext);
+  const { user, isLoggedIn } = useContext(AuthContext);
   
 
   function favoritos(favourite){

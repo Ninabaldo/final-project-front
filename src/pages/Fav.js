@@ -1,36 +1,61 @@
 import "../components/scss/fav.scss"
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "./../context/auth.context";
 import ApiHandler from "../services/ApiHandler.backend "
 
 
 
-const { user, isLoggedIn } = useContext(AuthContext);
+
+
 
 function Fav(favourite){
-
- 
-  
+  const[favourites,setFavourites]=useState()
+  const { user, isLoggedIn } = useContext(AuthContext);
+  useEffect(() => { //console.log(user._id)
     const api = new ApiHandler() 
     
-    api.getFavourite({...favourite,id:user?._id})
+    api.getFavourite({id:user?._id})
     
-    .then((result) =>{
-      res.jason("/pages/Fav")
-  
+    .then((result) =>{ //console.log(result)
+     
+    setFavourites(result.data.favourites)
     })
     .catch(err => console.log(err));
   
+  }, []);
     
+  return(
 
+   
 
-    return(
-  <h1>Hello, this is your profile page, save your favourite colors and combinations here.</h1>
-
-  
-
-
-
-    )
-};
+    <div className="picker">
+     <input type="color" defaultValue="#ED6371"/>
+     
+     
+   
+   
+       <div className= "simplecolors">
+   
+       {favourites.map(elm =>{
+          const color = `#${elm.hex}`
+          
+       return (
+         <div>
+       <img src={elm.image} alt="text" className="colors" 
+         
+       />
+       {isLoggedIn?
+       <button onClick={()=>{favourite(elm)}} 
+       class="heart">♥︎</button>
+        :null}
+        </div>
+       )
+       })}
+       
+       </div>
+       </div>)
+       }
+   
+   
 
 export default Fav;
