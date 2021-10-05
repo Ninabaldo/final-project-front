@@ -3,7 +3,7 @@ import "./scss/footer.scss"
 
 const Footer = () => (
   <div className="footer">
-    <p>This is some content in sticky footer</p>
+    <h4 className= "textfooter">Made with love by Nina(:</h4>
   </div>
 );
 

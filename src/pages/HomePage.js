@@ -1,6 +1,6 @@
 import "../components/scss/Home.scss"
 import homeImage from "../img/home.jpeg"
-//import Footer from "./components/Footer";
+import Footer from "../components/Footer";
 
 
 function HomePage() {
@@ -15,7 +15,7 @@ function HomePage() {
 
      <img src={homeImage} className="styleimage"/>
   
-          
+     <Footer></Footer>     
 
 </>
 
