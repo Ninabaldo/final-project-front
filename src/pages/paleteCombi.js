@@ -82,6 +82,7 @@ function PaleteCombi(){
  <div className="picker">
   <input type="color" defaultValue="#ED6371"/>
   
+  
 
 
     <div className= "simplecolors">
