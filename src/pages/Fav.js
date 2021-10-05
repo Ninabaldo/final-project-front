@@ -16,7 +16,7 @@ function Fav(favourite){
     
     api.getFavourite({id:user?._id})
     
-    .then((result) =>{ //console.log(result)
+    .then((result) =>{ console.log(result.data)
      
     setFavourites(result.data.favourites)
     })
@@ -41,6 +41,7 @@ function Fav(favourite){
       
        return (
          <div>
+         {console.log(elm.img)}
        <img src={elm.image} alt="text" className="colors" 
          
        />

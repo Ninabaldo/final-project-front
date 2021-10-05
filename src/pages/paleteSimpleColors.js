@@ -23,7 +23,7 @@ function PaleteSimpleColors(){
   
 
   function favoritos(favourite){
-  
+  console.log(favourite)
   const api = new ApiHandler() 
   
   api.addFavourite({...favourite,id:user?._id})
