@@ -3,7 +3,7 @@ import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navigation";
 import HomePage from "./pages/HomePage";
-import paleteSimpleColors from "./pages/PaleteSimpleColors"
+import paleteSimpleColors from "./pages/SimpleColor"
 import paleteCombi from "pages/PaleteCombi"
 import Ranking from "./pages/Ranking"
 import profile from "./pages/Fav"
