@@ -2,15 +2,15 @@ import "./App.css";
 //import Footer from "./footer"
 import { Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navigation";
-import HomePage from "pages/HomePage";
-import paleteSimpleColors from "pages/PaleteSimpleColors"
+import HomePage from "./pages/HomePage";
+import paleteSimpleColors from "./pages/PaleteSimpleColors"
 import paleteCombi from "pages/PaleteCombi"
-import Ranking from "pages/Ranking"
-import profile from "pages/Fav"
-import SignupPage from "pages/SignupPage";
-import LoginPage from "pages/LoginPage";
-import PrivateRoute from "components/PrivateRoute";    // <== IMPORT
-import AnonRoute from "components/AnonRoute";        // <== IMPORT
+import Ranking from "./pages/Ranking"
+import profile from "./pages/Fav"
+import SignupPage from "./pages/SignupPage";
+import LoginPage from "./pages/LoginPage";
+import PrivateRoute from "./components/PrivateRoute";    // <== IMPORT
+import AnonRoute from "./components/AnonRoute";        // <== IMPORT
 
 
 
