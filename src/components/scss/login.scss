@@ -83,8 +83,18 @@ body{
   }
 }
 
-.button{
-  width: 50px;
-  height: 30px;
-  background-color: violet;
+ button.buttonlogin{
+  background-color: rgb(255, 101, 101);
+  width: 90px;
+  height: 50px;
+  border-radius: 15px;
+  color:white;
+  border-color: transparent;
+  cursor: pointer;
+
 }
+
+ button.buttonlogin:hover{
+   background-color: rgb(255, 41, 41);
+
+ }

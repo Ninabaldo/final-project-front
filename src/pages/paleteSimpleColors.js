@@ -80,6 +80,7 @@ function PaleteSimpleColors(){
 
    
     <div className= "simplecolors">
+    <h1 className="titulo">🌈  PALETE COLORS  </h1>
     <div>
     {!isLoggedIn ?
     <h4>Register or login to save your favourites :)</h4>
@@ -92,6 +93,8 @@ function PaleteSimpleColors(){
        
     return (
       <div>
+
+      
     <div className="colors"
     style={{backgroundImage: `url(${elm.image})`}}>
   <abbr title="select+crt+c" className="p">#{elm.hex}</abbr></div>

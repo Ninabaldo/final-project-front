@@ -43,11 +43,11 @@ function SignupPage(props) {
     <div class="bottom"></div>
     <div class="center">
       <h2>Please Sign up</h2>
-      <input type="name"value={name} onChange={handleName} placeholder="name"/>
-      <input type="email"value={email} onChange={handleEmail} placeholder="email"/>
-      <input type="password" value={password} onChange={handlePassword}placeholder="password"/>
+      <input type="name"value={name} onChange={handleName} placeholder="Name"/>
+      <input type="email"value={email} onChange={handleEmail} placeholder="Email"/>
+      <input type="password" value={password} onChange={handlePassword}placeholder="Password"/>
       <h2>&nbsp;</h2>
-      <button type="submit">Signup</button>
+      <button className="buttonregister" type="submit">Signup</button>
     </div>
   </div>
   </form>

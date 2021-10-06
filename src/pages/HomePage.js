@@ -10,9 +10,10 @@ function HomePage() {
   return (
     
     <>
+   
     <h3>Put somme colors<br></br>
      in your<br></br>
-     digital world</h3> 
+     digital world </h3> 
 
    <button  className="homepage"onClick={()=>{history.push("/login")}}> 
    Login

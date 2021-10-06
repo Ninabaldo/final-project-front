@@ -46,8 +46,8 @@ function LoginPage(props) {
     <div className="bottom"></div>
     <div className="center">
       <h2>Please Login</h2>
-      <input type="email" value={email} onChange={handleEmail}placeholder="email"/>
-      <input type="password"  value={password} onChange={handlePassword}placeholder="password"/>
+      <input type="email" value={email} onChange={handleEmail}placeholder="Email"/>
+      <input type="password"  value={password} onChange={handlePassword}placeholder="Password"/>
       <h2>&nbsp;</h2>
       <button type="submit" className="buttonlogin"> Login </button>
     </div>

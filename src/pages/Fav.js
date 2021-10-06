@@ -2,6 +2,9 @@ import "../components/scss/fav.scss"
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "./../context/auth.context";
 import ApiHandler from "../services/ApiHandler.backend "
+import BasicGrid from "../components/BasicGrid";
+
+
 
 
 
@@ -27,13 +30,13 @@ function Fav(favourite){
   return(
    <>
    <h6>Hey, {user.name} :) <br></br>check out your favourites <br></br> 🌔 🌓 🌒 🌑 🌘 🌗 🌖 🌕</h6>
+ <BasicGrid/>
 
     <div className="picker">
      <input type="color" defaultValue="#ED6371"/>
-     
-     
    
    
+
        <div className= "simplecolors">
    
        {favourites?.map(elm =>{
@@ -45,21 +48,17 @@ function Fav(favourite){
        <img src={elm.image} alt="text" className="colors" 
          
        />
-       {isLoggedIn?
-       <button onClick={()=>{favourite(elm)}} 
-       class="heart">♥︎</button>
-        :null}
+       
         </div>
        )
        })}
+       </div>
+       </div>
        
-       </div>
-       </div>
        </> 
        )
         
        }
-   
    
 
 export default Fav;
