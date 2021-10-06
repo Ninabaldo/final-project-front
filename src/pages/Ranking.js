@@ -61,22 +61,25 @@ function favoritos(favourite){
 
       <>
       <div>
-  <h1>The most popular<br></br>
-      of Colored Id <br></br> 🫐 🍓 🍌 🥝 🍑 </h1>
+  <h1>The most popular of Colored Id 
+      <br></br> 🫐 🍓 🍌 🥝 🍑 </h1>
      </div>
 
 {ranking?.map(elm =>{
        const color = `#${elm.color.hex}`
   
     return (
+
+
       <div className="container1">
-    <img src={elm.color.image} alt="text" className="colors1" 
-      
+    <img src={elm.color.image} alt="text" className="colors2"  
     />
     {isLoggedIn ?
+    
      <button onClick={()=>{favoritos(elm)}} 
     class="heart">{elm.rank}♥︎</button>
-    :null}
+     :<button class="heart">{elm.rank}♥︎</button>} 
+     
     <div>
     </div>
      </div>

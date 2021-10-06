@@ -25,9 +25,9 @@ function Fav(favourite){
     
     api.getFavourite({id:user?._id})
     
-    .then((result) =>{ console.log(result.data)
+    .then((result) =>{ //console.log(result.data)
      result.data.favourites.forEach(element => {
-       if (element.image.includes("count=3")){
+       if (element.image.includes("&count=3")){
         schemes.push(element)
 
        }
@@ -45,7 +45,7 @@ function Fav(favourite){
 
 
   // DELETE !!!!!!!!!!
-const deleteFav = (colorId, cual) => { console.log("hola")                              
+const deleteFav = (colorId, cual) => {                               
     // Make a DELETE request to delete the color
     axios
       .delete(`${API_URL}/deleteFav/${colorId}`,
@@ -55,8 +55,7 @@ const deleteFav = (colorId, cual) => { console.log("hola")
        if(cual=== "colors"){
        const newColors = favouriteColors.filter(color=>
         color._id !== colorId)
-       //console.log(newColors)
-       //console.log(favouriteColors)
+       
        setFavouriteColors(newColors)
 
       }
@@ -64,8 +63,7 @@ const deleteFav = (colorId, cual) => { console.log("hola")
       if(cual=== "schemes"){
        const newColors = favouriteSchemes.filter(color=>
         color._id !== colorId)
-       //console.log(newColors)
-       //console.log(favouriteColors)
+       
        setFavouriteSchemes(newColors)
       }
 
@@ -92,7 +90,7 @@ const deleteFav = (colorId, cual) => { console.log("hola")
        return (
          <div>
          {console.log(elm)}
-       <img src={elm.image} alt="text" className="colors" 
+       <img src={elm.image} alt="text" className="colors2" 
          
        />
        <div>
@@ -110,7 +108,7 @@ const deleteFav = (colorId, cual) => { console.log("hola")
        return (
          <div>
          {console.log(elm.img)}
-       <img src={elm.image} alt="text" className="colors" 
+       <img src={elm.image} alt="text" className="colors2" 
          
        />
        <div>
