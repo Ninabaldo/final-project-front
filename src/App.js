@@ -23,7 +23,7 @@ function App() {
       <Switch>      
         <Route exact path="/" component={HomePage} />
         
-        {/* 👇 UPDATE THE EXISTING ROUTES 👇  */}
+        {/* 👇 UPDATE THE EXISTING ROUTES   */}
         <Route exact path="/paleteSimpleColors" component={paleteSimpleColors} />
         <Route exact path="/paleteCombi" component={paleteCombi} />
         <Route exact path="/ranking" component={Ranking} />
