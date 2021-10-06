@@ -1,8 +1,8 @@
 import "./App.css";
 //import Footer from "./footer"
 import { Switch, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import HomePage from "./pages/HomePage";
+import Navbar from "components/Navbar";
+import HomePage from "pages/HomePage";
 import paleteSimpleColors from "./pages/PaleteSimpleColors"
 import paleteCombi from "./pages/PaleteCombi"
 import Ranking from "./pages/Ranking"
