@@ -2,8 +2,10 @@ import "../components/scss/fav.scss"
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "./../context/auth.context";
 import ApiHandler from "../services/ApiHandler.backend "
+import axios from "axios";
 
-
+const API_URL = process.env.REACT_APP_API_URL;
+const storedToken = localStorage.getItem("authToken");
 
 
 
@@ -42,7 +44,34 @@ function Fav(favourite){
   }, []);
 
 
+  // DELETE !!!!!!!!!!
+const deleteFav = (colorId, cual) => { console.log("hola")                              
+    // Make a DELETE request to delete the color
+    axios
+      .delete(`${API_URL}/deleteFav/${colorId}`,
+      { headers: { Authorization: `Bearer ${storedToken}`} })
+      .then((response) => {
+       console.log(response)
+       if(cual=== "colors"){
+       const newColors = favouriteColors.filter(color=>
+        color._id !== colorId)
+       //console.log(newColors)
+       //console.log(favouriteColors)
+       setFavouriteColors(newColors)
 
+      }
+
+      if(cual=== "schemes"){
+       const newColors = favouriteSchemes.filter(color=>
+        color._id !== colorId)
+       //console.log(newColors)
+       //console.log(favouriteColors)
+       setFavouriteSchemes(newColors)
+      }
+
+      })
+      .catch((err) => console.log(err));
+  };
 
 
     
@@ -62,13 +91,13 @@ function Fav(favourite){
       
        return (
          <div>
-         {console.log(elm.img)}
+         {console.log(elm)}
        <img src={elm.image} alt="text" className="colors" 
          
        />
        <div>
        
-       <button className="bin" type="submit"> ✖️ </button>
+       <button onClick={()=>deleteFav(elm._id,"colors")}className="bin" type="submit"> ✖️ </button>
        
        
         </div>
@@ -86,7 +115,7 @@ function Fav(favourite){
        />
        <div>
        
-       <button className="bin" type="submit"> ✖️ </button>
+       <button onClick={()=>deleteFav(elm._id,"schemes")}className="bin" type="submit"> ✖️ </button>
        
        
         </div>

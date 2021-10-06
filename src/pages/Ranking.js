@@ -1,11 +1,16 @@
 import "../components/scss/Ranking.scss"
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState , useContext} from 'react';
 import axios from "axios";
+import { AuthContext } from "./../context/auth.context";
+import ApiHandler from "../services/ApiHandler.backend "
+
 
 function Ranking(){
 const API_URL = process.env.REACT_APP_API_URL;
 const storedToken = localStorage.getItem("authToken");
 const [ranking, setRanking] = useState();
+const { user,  isLoggedIn } = useContext(AuthContext);
+
 
   
     // Declare a new state variable, which we'll call "count"
@@ -29,6 +34,24 @@ const [ranking, setRanking] = useState();
   )
   }, []);
 
+function favoritos(favourite){
+  console.log(favourite)
+  const api = new ApiHandler() 
+  
+  api.addFavourite({...favourite,id:user?._id})
+  
+  .then((result) =>{
+    //res.redirect("/pages/Fav")
+
+  })
+  .catch(err => console.log(err));
+
+  }
+   
+  
+
+
+
 
 
 
@@ -46,12 +69,15 @@ const [ranking, setRanking] = useState();
        const color = `#${elm.color.hex}`
   
     return (
-      <div>
-    <img src={elm.color.image} alt="text" className="colors" 
+      <div className="container1">
+    <img src={elm.color.image} alt="text" className="colors1" 
       
     />
+    {isLoggedIn ?
+     <button onClick={()=>{favoritos(elm)}} 
+    class="heart">{elm.rank}♥︎</button>
+    :null}
     <div>
-    {elm.rank}
     </div>
      </div>
     )
