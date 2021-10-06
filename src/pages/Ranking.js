@@ -1,26 +1,63 @@
 import "../components/scss/Ranking.scss"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from "axios";
 
 function Ranking(){
+const API_URL = process.env.REACT_APP_API_URL;
+const storedToken = localStorage.getItem("authToken");
+const [ranking, setRanking] = useState();
 
   
     // Declare a new state variable, which we'll call "count"
-    const [count, setCount] = useState(0);
+   
+   useEffect(() => {
+     axios.get(
+        `${API_URL}/ranking`, 
+        { headers: { Authorization: `Bearer ${storedToken}`} }
+      )
+      .then ((colors)=>{
+       console.log(colors.data)
+       setRanking(colors.data)
+    
+  }
+  )
+
+      .catch ((err)=>{
+        console.log(err)
+    
+  }
+  )
+  }, []);
+
+
+
 
 
     return(
+
+
       <>
       <div>
   <h1>The most popular<br></br>
-      of Colored Id <br></br> 🫐 🍓 🍌 🥝 🍑 🍉 🥥</h1>
+      of Colored Id <br></br> 🫐 🍓 🍌 🥝 🍑 </h1>
      </div>
 
+{ranking?.map(elm =>{
+       const color = `#${elm.color.hex}`
+  
+    return (
       <div>
-      <p>You clicked {count} times</p>
+    <img src={elm.color.image} alt="text" className="colors" 
       
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+    />
+    <div>
+    {elm.rank}
+    </div>
+     </div>
+    )
+    })}
+      <div>
+     
     </div>
   </>
   
