@@ -1,8 +1,4 @@
-import login from "../pages/LoginPage"
-import signup from "../pages/SignupPage"
-import ranking from "../pages/Ranking"
-import paleteColors from "../pages/SimpleColor"
-import paleteCombi from "../pages/PaleteColors"
+
 import "./scss/NavBar.scss";
 import { AuthContext } from "./../context/auth.context";
 import { useContext } from "react";
