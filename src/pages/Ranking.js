@@ -61,8 +61,8 @@ function favoritos(favourite){
 
       <>
       <div>
-  <h1>The most popular of Colored Id 
-      <br></br> 🫐 🍓 🍌 🥝 🍑 </h1>
+  <h2 className="ranking">The most popular of Colored Id 
+      <br></br> 🫐 🍓 🍌 🥝 🍑 </h2>
      </div>
 
 {ranking?.map(elm =>{
