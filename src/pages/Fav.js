@@ -23,7 +23,7 @@ function Fav(favourite) {
   const { user, isLoggedIn } = useContext(AuthContext);
   useEffect(() => { //console.log(user._id)
     const api = new ApiHandler()
-
+    console.log(user)
     api.getFavourite({ id: user?._id })
 
       .then((result) => { //console.log(result.data)
