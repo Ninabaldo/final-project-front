@@ -267,10 +267,10 @@ body {
   83.3%,95.96% {transform:translate3d(0,-25%,0);}
 }
 
-h3{
-  font-size: 70px;
+h3.home{
+  font-size: 100px;
   display:flex;
-  margin-top: 340px;
+  margin-top: 240px;
   margin-left:250px;
   font-weight:lighter
   
@@ -283,7 +283,7 @@ width: 687px;
 height: 740px;
 border-radius: 10px;
 
-margin: -440px -440px 470px 470px;
+margin: -440px -440px 770px 770px;
 
 }
 
@@ -299,6 +299,7 @@ button.homepage{
   margin-top:100px;
   margin-left:250px;
   cursor:pointer;
+  font-weight: lighter;
 }
 
 button.homepage:hover{
@@ -323,6 +324,7 @@ button.homepage1{
   margin-top:100px;
   margin-left:15px;
   cursor:pointer;
+  font-weight: lighter;
 }
 
 button.homepage1:hover{

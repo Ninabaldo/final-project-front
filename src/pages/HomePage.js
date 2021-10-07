@@ -1,36 +1,36 @@
 import "../components/scss/Home.scss"
 import homeImage from "../img/home.jpeg"
 import Footer from "../components/Footer";
-import {useHistory} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 
 function HomePage() {
   const history = useHistory()
-  
+
   return (
-    
+
     <>
-   
-    <h3>Put somme colors<br></br>
-     in your<br></br>
-     digital world </h3> 
 
-   <button  className="homepage"onClick={()=>{history.push("/login")}}> 
-   Login
+      <h3 className="home">Put somme colors<br></br>
+        in your<br></br>
+        digital world </h3>
 
-   </button>
-   <button  className="homepage1"onClick={()=>{history.push("/signup")}}> 
-   Signup
-   </button>
+      <button className="homepage" onClick={() => { history.push("/login") }}>
+        Login
 
-     <img src={homeImage} className="styleimage"/>
-  
-     <Footer></Footer>     
+      </button>
+      <button className="homepage1" onClick={() => { history.push("/signup") }}>
+        Signup
+      </button>
 
-</>
+      <img src={homeImage} className="styleimage" />
+
+      <Footer></Footer>
+
+    </>
 
 
-);
-  }
+  );
+}
 
 export default HomePage;

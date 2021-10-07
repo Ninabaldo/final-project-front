@@ -10,8 +10,9 @@ body{
 .container{
    
   position:absolute;
-  margin-left: 50px;
-  margin-top:50px;
+ margin: 150px 150px ;
+ margin-left: 400px;
+
   width:90%;
   height:50%;
   overflow:hidden;
@@ -94,6 +95,7 @@ body{
   color:white;
   border-color: transparent;
   cursor: pointer;
+  font-weight: lighter;
 
 }
 

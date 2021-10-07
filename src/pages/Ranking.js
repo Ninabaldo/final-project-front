@@ -58,8 +58,9 @@ function favoritos(favourite){
 
     return(
 
-
+    
       <>
+      {console.log(ranking)}
       <div>
   <h2 className="ranking">The most popular of Colored Id 
       <br></br> 🫐 🍓 🍌 🥝 🍑 </h2>
@@ -69,6 +70,8 @@ function favoritos(favourite){
        const color = `#${elm.color.hex}`
   
     return (
+     <>
+    {elm.rank !== 0? 
 
 
       <div className="container1">
@@ -83,6 +86,8 @@ function favoritos(favourite){
     <div>
     </div>
      </div>
+   :null}
+   </>
     )
     })}
       <div>
