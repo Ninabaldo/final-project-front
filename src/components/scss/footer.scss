@@ -17,3 +17,48 @@
 
   }
   
+  
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+
+
+
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 250px;
+    display:block;
+    margin: 0 auto;
+}
+
+ul.social-icons {
+    margin-top: 10px;
+    
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+    
+}
+.social-icons a {
+    color: rgb(66, 156, 103);
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    padding:10px 14px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+
+.fa-github {
+    padding:10px 14px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+

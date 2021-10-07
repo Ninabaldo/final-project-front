@@ -81,14 +81,17 @@ function PaleteCombi() {
 
 
     <div>
+
       <h1 className="titulo1">🐝 PALETE COMBINATIONS  </h1>
 
       <div className="simplecolors">
         <div>
+
           {!isLoggedIn ?
             <h4 className="register">REGISTER or LOGIN to save your favourites :)</h4>
             : null}
           <h4 className="name">Click to the Color Picker and check the value of each color "Hbr,Hsl,Hex" </h4>
+
           <h4 className="lila"> Reload ♻︎ the page to see more combinations</h4>
         </div>
 
@@ -106,10 +109,12 @@ function PaleteCombi() {
                   class="heart">♥︎</button>
                 : null}
             </div>
+
           )
         })}
 
       </div>
+
     </div>)
 }
 
