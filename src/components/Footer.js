@@ -3,9 +3,9 @@ import "./scss/footer.scss"
 
 const Footer = () => (
   <>
+
     <div className="footer">
-      <h4 className="textfooter">Made with love by Nina(:
-      </h4>
+
 
 
       <div class="footer-social-icons">

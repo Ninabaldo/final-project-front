@@ -96,6 +96,7 @@ function PaleteSimpleColors() {
               <button onClick={() => { favoritos(elm) }}
                 class="heart">♥︎</button>
               : null}
+
           </div>
         )
 

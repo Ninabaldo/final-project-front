@@ -18,7 +18,9 @@ function HomePage() {
           in your<br></br>
           digital world </h3>
         :
+
         <h3 className="home2"> Hey👋🏽  wellcome, check out our libraries!</h3>}
+
       {!isLoggedIn ?
         <button className="homepage" onClick={() => { history.push("/login") }}>
           Login
