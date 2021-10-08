@@ -3,7 +3,7 @@ import homeImage from "../img/home.jpeg"
 import Footer from "../components/Footer";
 import { useHistory } from "react-router-dom";
 import { AuthContext } from "../context/auth.context";
-import { useEffect, useState, useContext } from "react";
+import { useContext } from "react";
 
 
 function HomePage() {
@@ -12,11 +12,13 @@ function HomePage() {
   return (
 
     <>
+      {!isLoggedIn ?
 
-
-      <h3 className="home">Put somme colors<br></br>
-        in your<br></br>
-        digital world </h3>
+        <h3 className="home">Put somme colors<br></br>
+          in your<br></br>
+          digital world </h3>
+        :
+        <h3 className="home2"> Hey👋🏽  wellcome, check out our libraries!</h3>}
       {!isLoggedIn ?
         <button className="homepage" onClick={() => { history.push("/login") }}>
           Login
@@ -28,8 +30,10 @@ function HomePage() {
           Signup
         </button>
         : null}
-      <img src={homeImage} className="styleimage" />
-
+      {!isLoggedIn ?
+        <img src={homeImage} className="styleimage" />
+        :
+        null}
       <Footer></Footer>
 
     </>

@@ -5,7 +5,7 @@ import "../components/scss/PaleteColors.scss"
 import "../components/scss/PaleteCombination.scss"
 import ApiHandler from "../services/ApiHandler.backend "
 import { AuthContext } from "../context/auth.context";
-import { returnStatement } from "@babel/types";
+
 
 
 
